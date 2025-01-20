@@ -6,7 +6,7 @@
 /*   By: mkadri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 17:22:21 by mkadri            #+#    #+#             */
-/*   Updated: 2025/01/20 19:32:38 by mkadri           ###   ########.fr       */
+/*   Updated: 2025/01/20 19:50:18 by mkadri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,8 @@ int	main() {
 	}
 	std::cout << std::endl;
 ////////////////////////////////////////////////////////////////////////////////////
-	std::cout << CYAN << "\n------- BOB (starting grade : 73) && ROBOTOMY REQUEST FORM -------\n" << RESET << std::endl;
+
+	std::cout << CYAN << "\n------- BOB (starting grade : 73) : ROBOTOMY REQUEST FORM -------\n" << RESET << std::endl;
 	try {
 		Bob.executeForm(*rob);
 	}
