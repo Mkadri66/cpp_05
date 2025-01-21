@@ -6,7 +6,7 @@
 /*   By: mkadri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/17 17:22:21 by mkadri            #+#    #+#             */
-/*   Updated: 2025/01/20 19:50:45 by mkadri           ###   ########.fr       */
+/*   Updated: 2025/01/20 20:11:30 by mkadri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 #include "RobotomyRequestForm.hpp"
 #include "ShrubberyCreationForm.hpp"
 #include "PresidentialPardonForm.hpp"
+#include "Intern.hpp"
 
 int	main() {
 
@@ -119,6 +120,36 @@ int	main() {
 	}
 	std::cout << std::endl;
 
+////////////////////////////////////////////////////////////////////////////////////
+
+	std::cout << CYAN << "\n------- INTERN TESTS -------\n" << RESET << std::endl;
+	Intern	randomIntern;
+	AForm*	rrf;
+
+	try {
+		rrf = randomIntern.makeForm("random form", "Jesus");
+	}
+	catch(const std::exception& e) {
+		std::cerr << e.what() << '\n';
+	}
+	std::cout << std::endl;
+	try {
+		rrf = randomIntern.makeForm("robotomy request", "Bernard");
+	}
+	catch(const std::exception& e) {
+		std::cerr << e.what() << '\n';
+	}
+
+	try {
+		Bob.signForm(*rrf);
+		std::cout << std::endl;
+		Bob.executeForm(*rrf);
+	}
+	catch(const std::exception& e) {
+		std::cerr << Bob.getName() << e.what() << '\n';
+	}
+
+	delete	rrf;
 	delete shrub;
 	delete prez;
 	delete rob;
