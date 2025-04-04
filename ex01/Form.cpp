@@ -6,11 +6,13 @@
 /*   By: mkadri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/13 11:29:45 by mkadri            #+#    #+#             */
-/*   Updated: 2025/01/13 11:54:44 by mkadri           ###   ########.fr       */
+/*   Updated: 2025/04/04 08:48:23 by mkadri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "Form.hpp"
+#include "Bureaucrat.hpp"
+#include "Form.hpp"
+
 
 Form::Form(): _name("default"), _signed(false), _gradeToSign(150), _gradeToExec(150) {}
 

@@ -6,7 +6,7 @@
 /*   By: mkadri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:34:57 by mkadri            #+#    #+#             */
-/*   Updated: 2025/01/13 11:54:05 by mkadri           ###   ########.fr       */
+/*   Updated: 2025/04/04 08:47:49 by mkadri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@
 # include <iostream>
 # include <string>
 # include <stdexcept>
-# include "Form.hpp"
+#include "Bureaucrat.hpp"
+#include "Form.hpp"
 
 class	Bureaucrat {
 
